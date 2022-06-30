@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+    box-sizing:border-box ;
+    margin: 0;
+    /* padding: 0; */
+    /* background-color: hsl(240, 4%, 95%); */
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.coin-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.coin-search{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 1000px;
+    padding: 1rem 0;
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left-option, .right-option{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.button-special{
+    background-color: rgb(46, 189, 92) !important;
+    border-radius: 20px;
+    color: white !important;
+    padding: 0 1rem;
+    box-shadow:0 0 0.4rem rgb(170, 170, 170) ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-special:hover{
+    cursor: pointer;
+}
+
+.button{
+    border: none;
+    background-color: white;
+    color: rgb(83, 83, 83);
+    font-size: 13px;
+    padding: 0 1rem ;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(246, 246, 246);
+}
+
+.span-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.span-div > div{
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(213, 213, 213);
+}
+
+.coin-search img{
+    width: 6rem;
+    height: 4 rem;
+    /* padding: 2rem 0; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coin-container-outer{
+    display: flex;
+    flex-direction: column;
+    top: -8.5rem;
+    position: relative;
+    border: 0.5px solid rgb(164, 164, 164);
+    box-shadow: 0 0 1rem rgb(106, 106, 106);
+    background-color: white;
+}
+
+
+.color-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5rem ;
+    padding-bottom: 10rem;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(42, 42, 154), rgb(134, 158, 247));
+
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 1px solid rgb(183, 182, 182);
+    height: 2rem;
+    width: 1000px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 4px 4px 0 0 ;
+    
+}
+
+.header div{
+    padding: 40px auto;
+    font-size: 13px;
+}
+
+.color-div > div{
+    background: none;
+    /* color: rgb(217, 216, 216); */
+    font-weight: bolder;
+    padding: 0 30px;
+}
+
+.coin-input::placeholder {
+    color: #e2e2e2;
+}
+
+.footer-container{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(42, 42, 154), rgb(134, 158, 247));
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+}
+
+.footer-div p{
+    color: rgba(255, 254, 254, 0.519);
+    font-size: 12px;
+    padding-bottom: 0.2rem;
+}
+
+.foot-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrap{
+    word-wrap: break-word;
+}
+
+.row-div{
+    padding-bottom: 2rem;
+}
+
+.labels{
+    padding: 0 3rem;
+    width:50%;
+}
+
+.label{
+    color: white;
+    padding-bottom: 0.8rem;
+    font-weight: bolder;
+    font-size: 14px;
 }
